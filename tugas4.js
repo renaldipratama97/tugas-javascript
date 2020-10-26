@@ -18,9 +18,11 @@ let data = {
   
   
   // *** Spread Operator ***
-  data.name = "Renaldi Pratama Tumanggor"
-  data.email = "renaldipratama51@gmail.com"
-  data.hobby = ["Belajar", "Ngoding", "Sepakbola", "Futsal"]
+  let newData = {
+    ...data, name: "Renaldi Pratama Tumanggor", 
+    email: "renaldipratama51@gmail.com", 
+    hobby = ["Belajar", "Ngoding", "Sepakbola", "Futsal"]
+  }
   console.log(data)
   console.log()
   console.log()
@@ -30,3 +32,4 @@ let data = {
   const {street, city} = data.address
   console.log(street)
   console.log(city)
+  console.log()
